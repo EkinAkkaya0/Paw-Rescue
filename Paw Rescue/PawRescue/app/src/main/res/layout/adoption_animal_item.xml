@@ -1,0 +1,39 @@
+<!-- item_animal.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/recycler_row_cell"
+    android:layout_margin="10dp"
+    android:layout_gravity="center_horizontal"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageAnimal"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/textAnimalSpecies"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/textAnimalAge"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/contactNumberAdoption"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="16sp">
+
+    </TextView>
+</LinearLayout>

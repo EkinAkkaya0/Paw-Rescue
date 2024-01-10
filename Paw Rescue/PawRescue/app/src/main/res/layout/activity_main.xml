@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btnLostAndFound"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:backgroundTint="#339AF0"
+            android:text="Lost and Found">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnRescueAndFeed"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:backgroundTint="#339AF0"
+            android:text="Rescue and Feed">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnAdoption"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:backgroundTint="#339AF0"
+            android:text="Adoption Center">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnDonation"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:text="Donation"
+            android:backgroundTint="#339AF0"
+            android:layout_margin="5dp">
+
+        </Button>
+
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/signOutButton"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/layout_button_custom"
+        android:elevation="4dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gridLayout">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sign_out" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Sign Out"
+            android:textColor="#800020"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/signOutButton"
+            app:layout_constraintEnd_toStartOf="@+id/signOutButton"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/signOutButton"
+            app:layout_constraintVertical_bias="0.487">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/mainActivityUserTextView"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:background="@drawable/activity_bar_design"
+        android:elevation="16dp"
+        android:gravity="center"
+        android:paddingTop="35dp"
+        android:textColor="#004980"
+        android:textSize="20sp"
+        android:text="Profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/user45"
+        android:elevation="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/mainActivityUserTextView"
+        app:layout_constraintStart_toStartOf="@+id/mainActivityUserTextView"
+        app:layout_constraintTop_toTopOf="@+id/mainActivityUserTextView"/>
+
+    <Button
+        android:id="@+id/emergencyCallButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF0000"
+        android:text="Emergency call"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

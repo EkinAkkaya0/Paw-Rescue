@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile">
+
+    <ImageView
+        android:id="@+id/profileIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/user45"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/userNameTextview"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="115dp"
+        android:background="@drawable/edit_text_outline"
+        android:gravity="center|start"
+        android:paddingStart="15dp"
+        android:textColor="#5f5f6e"
+        android:text="Name"
+        android:textSize="16sp"
+        android:textStyle="italic|normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/userSurnameTextview"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:text="Surname"
+        android:gravity="center|start"
+        android:textColor="#5f5f6e"
+        android:paddingStart="15dp"
+        android:background="@drawable/edit_text_outline"
+        android:textSize="16sp"
+        android:textStyle="italic|normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userNameTextview">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:text="Name :"
+        android:gravity="center|start"
+        android:textColor="#004980"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/userNameTextview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center|start"
+        android:text="Surname :"
+        android:textColor="#004980"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.189"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userNameTextview" />
+
+    <Button
+        android:id="@+id/deleteProfileButton"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:textSize="18sp"
+        android:text="Delete Profile"
+        android:backgroundTint="#800020"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userSurnameTextview">
+
+    </Button>
+</androidx.constraintlayout.widget.ConstraintLayout>

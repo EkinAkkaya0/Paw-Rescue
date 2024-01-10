@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "686307410386",
+    "project_id": "paw-rescue-a0945",
+    "storage_bucket": "paw-rescue-a0945.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686307410386:android:6aa6fa20f4f6a2a03f880b",
+        "android_client_info": {
+          "package_name": "com.example.pawrescue"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCS3Z_sPoaXjxihNzDKW010Jjp152x9yeQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
